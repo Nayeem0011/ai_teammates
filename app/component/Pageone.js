@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Pageone = () => {
 
   return (
-    <section className="">
+    <section className="relative w-full h-screen overflow-hidden">
 
     </section>
   );
