@@ -1,44 +1,131 @@
 "use client";
 
-import Image from 'next/image';
+import { useState } from "react";
+import Image from "next/image";
+import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
+import { motion, AnimatePresence } from "framer-motion";
+
 import mask_group from './image/mask_group.png';
+import button_bg_img from './image/button_bg_img.png';
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
 
   return (
-    <section className="w-full max-w-[80%] mx-auto">
-      <div className="flex items-center justify-between pt-[40px]">
-        {/* Logo */}
-        <Image className="w-52.5" src={mask_group} alt="loading ..." />
-        <div className='w-[364px] h-[54px] p-[3px] gap-[10px] rounded-[70px] border border-opacity-100 rotate-0 bg-white border-[#F2F2F2] shadow-[0px_0px_19.2px_0px_#0505051A]'>
-          <div className='flex items-center justify-center gap-6 w-[356px] h-[46px] rounded-[50px] border border-[#F3F3F3]'>
-            <p className='text-[#838789] text-[16px] leading-[160%] tracking-[0%]'>Integrations</p>
-            <p className='text-[#838789] text-[16px] leading-[160%] tracking-[0%]'>Pricing</p>
-            <p className='text-[#838789] text-[16px] leading-[160%] tracking-[0%]'>Sandbox</p>
-            <p className='text-[#838789] text-[16px] leading-[160%] tracking-[0%]'>Blog</p>
-          </div>
-        </div>
-        <div className='flex gap-[16px]'>
-          <button className='text-[#0F74EF] w-[106px] h-[50px] flex items-center justify-center gap-[10px] rounded-[100px] pt-[12px] pr-[20px] pb-[12px] pl-[20px] border border-[#0F74EF] text-[16px] leading-[160%] tracking-[0%]'>
-            Sign in
-          </button>
-          {/* <div className='w-[130px] h-[48px] rounded-[72px] p-[1px] shadow-[0px_10px_24px_0px_#0D509670]
-bg-[linear-gradient(180deg,rgba(0,136,255,0.3)_0%,rgba(119,192,255,0.3)_100%),radial-gradient(63.87%_50%_at_52.08%_100%,#FFFFFF_0%,rgba(255,255,255,0)_100%)]'>
-            <button className='top-[1px] left-[122px] rounded-[72px] p-[1px]
-bg-[linear-gradient(180deg,rgba(0,136,255,0.3)_0%,rgba(119,192,255,0.3)_100%),radial-gradient(63.87%_50%_at_52.08%_100%,#FFFFFF_0%,rgba(255,255,255,0)_100%)]
-shadow-[0px_0px_0px_5px_#FFFFFF,0px_0px_0px_4px_#E0E9F2,0px_3.71px_4.85px_0px_#57B1FF27,0px_10.27px_13.4px_0px_#57B1FF38,0px_24.72px_32.26px_0px_#57B1FF30,0px_42px_107px_0px_#57B1FF57]'>
-              Al teammate
-            </button>
-          </div> */}
+    <header className="w-full">
+      <nav className="xl:max-w-[80%] max-w-[90%] mx-auto pt-10">
+        <div className="flex items-center justify-between">
 
-          <div className="p-[2px] rounded-[72px] bg-[linear-gradient(180deg, rgba(0,136,255,0.3)_0%, rgba(119,192,255,0.3)_100%), radial-gradient(63.87%_50%_at_52.08%_100%, #0F74EF_40%, rgba(255,255,255,0)_100%)]">
-            <button className="w-[130px] h-[48px] rounded-[72px] flex items-center justify-center">
-              AI teammate
-            </button>
+          {/* Logo */}
+          <Image className="w-52.5 cursor-pointer" src={mask_group} alt="loading ..." />
+
+          {/* Desktop Menu */}
+          <div className='p-0.75 gap-2.5 rounded-[70px] border border-opacity-100 rotate-0 bg-white border-[#F2F2F2] shadow-[0px_0px_19.2px_0px_#0505051A]'>
+            <div className='hidden lg:flex items-center justify-center gap-6 px-7 py-3 rounded-[50px] border border-[#F3F3F3]'>
+              {["Integrations", "Pricing", "Sandbox", "Blog"].map((item) => (
+                <p
+                  key={item}
+                  className="text-[#838789] text-[16px] cursor-pointer hover:text-[#0F74EF] transition"
+                >
+                  {item}
+                </p>
+              ))}
+            </div>
           </div>
+
+          {/* Desktop Buttons */}
+          <div className='hidden lg:flex items-center gap-4'>
+            <button className='text-[#0F74EF] w-26.5 h-12.5 flex items-center justify-center gap-2.5 rounded-[100px] py-3 px-5 border border-[#0F74EF] text-[16px] leading-[160%] cursor-pointer'>
+              Sign in
+            </button>
+
+            <div className="border-[#E4F2FF] border-5 rounded-[72px] ">
+              <button
+                className="relative w-32.5 h-12 rounded-[72px] flex items-center justify-center text-white text-[16px] leading-[160%] overflow-hidden bg-[linear-gradient(180deg,#0F74EF_0%,#1994E7_100%)] cursor-pointer
+                shadow-[0px_3.71px_4.85px_0px_#57B1FF27,0px_10.27px_13.4px_0px_#57B1FF38,0px_24.72px_32.26px_0px_#57B1FF30,0px_42px_107px_0px_#57B1FF57,inset_0px_1px_4px_2px_#9ACDF9,inset_0px_1px_18px_2px_#9AD0FF]">
+                {/* Image layer (opacity 40%) */}
+                <span
+                  className="absolute inset-0 opacity-40 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${button_bg_img.src})`,
+                  }} />
+
+                {/* Text layer */}
+                <span className="relative z-10">
+                  AI teammate
+                </span>
+              </button>
+            </div>
+          </div>
+
+          {/* Hamburger */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="lg:hidden text-3xl text-[#0F74EF]"
+          >
+            {open ? <HiX /> : <HiOutlineMenuAlt3 />}
+          </button>
         </div>
-      </div>
-    </section>
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {open && (
+            <motion.div
+              initial={{ opacity: 0, y: -30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{
+                duration: 0.35,
+                ease: "easeOut",
+              }}
+              className="lg:hidden mt-6 ml-auto w-[85%] max-w-[320px] rounded-2xl border border-opacity-100 rotate-0 bg-white border-[#F2F2F2] shadow-xl p-6 space-y-4">
+              {["Integrations", "Pricing", "Sandbox", "Blog"].map((item) => (
+                <motion.p
+                  key={item}
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1 }}
+                  className="text-[#838789] text-[16px] cursor-pointer hover:text-[#0F74EF] transition"
+                >
+                  {item}
+                </motion.p>
+              ))}
+
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.15 }}
+                className="flex flex-col gap-3 pt-4"
+              >
+
+                <button className='text-[#0F74EF] w-full flex items-center justify-center gap-2.5 rounded-[100px] py-3 px-5 border border-[#0F74EF] text-[16px] leading-[160%] cursor-pointer'>
+                  Sign in
+                </button>
+
+                <div className="border-[#E4F2FF] border-5 rounded-[72px] ">
+                  <button
+                    className="relative w-full py-3 rounded-[72px] flex items-center justify-center text-white text-[16px] leading-[160%] overflow-hidden bg-[linear-gradient(180deg,#0F74EF_0%,#1994E7_100%)] cursor-pointer
+                    shadow-[0px_3.71px_4.85px_0px_#57B1FF27,0px_10.27px_13.4px_0px_#57B1FF38,inset_0px_1px_4px_2px_#9ACDF9,inset_0px_1px_18px_2px_#9AD0FF]">
+                    {/* Image layer (opacity 40%) */}
+                    <span
+                      className="absolute inset-0 opacity-40 bg-cover bg-center"
+                      style={{
+                        backgroundImage: `url(${button_bg_img.src})`,
+                      }} />
+
+                    {/* Text layer */}
+                    <span className="relative z-10">
+                      AI teammate
+                    </span>
+                  </button>
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+      </nav>
+    </header>
   );
 };
 
