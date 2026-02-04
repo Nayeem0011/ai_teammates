@@ -12,8 +12,9 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full">
-      <nav className="xl:max-w-[80%] max-w-[90%] mx-auto pt-10">
+    <header className="w-full backdrop-blur-[100px] bg-[linear-gradient(180deg,#FFFFFF_0%,#FFFFFF_100%)]
+">
+      <nav className="xl:max-w-[80%] max-w-[90%] mx-auto pt-10 pb-10">
         <div className="flex items-center justify-between">
 
           {/* Logo */}
