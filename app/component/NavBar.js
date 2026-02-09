@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import rectangle7 from './image/rectangle7.png';
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -12,8 +13,22 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full backdrop-blur-[100px] bg-[linear-gradient(180deg,#FFFFFF_0%,#FFFFFF_100%)]
-">
+    // <header className="w-full backdrop-blur-[100px] bg-[linear-gradient(180deg,#FFFFFF_0%,#FFFFFF_100%)]">
+    <header className="relative w-full overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src={rectangle7}
+          alt="navbar bg"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+      {/* <div className="absolute inset-0 -z-10">
+        <div className=" w-full h-30.25 bg-linear-to-b from-white to-white blur-[50px]"></div>
+      </div> */}
+
       <nav className="xl:max-w-[80%] max-w-[90%] mx-auto pt-10 pb-10">
         <div className="flex items-center justify-between">
 
