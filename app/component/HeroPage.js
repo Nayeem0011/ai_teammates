@@ -9,6 +9,9 @@ import button_bg_img from './image/button_bg_img.png';
 import fi_99744 from './image/fi_99744.png';
 import fi_5236921 from './image/fi_5236921.png';
 import Group from './image/Group.png';
+import fi_15862284 from './image/fi_15862284.png';
+import fi_11168291 from './image/fi_11168291.png';
+import fi_1161439 from './image/fi_1161439.png';
 
 import SparkIcon from '../svg/SparkIcon';
 import GradientLine from '../svg/GradientLine';
@@ -50,40 +53,8 @@ const HeroPage = () => {
           </div>
         </div>
 
-        <div>
-          <div className='flex items-center absolute bottom-24 left-1/2 -translate-x-1/2 w-[320px] h-107.5 rounded-[74px] bg-[#E4F2FF]'>
-            <div className='flex items-center justify-center absolute left-1/2 -translate-x-1/2 w-75 h-102.5 rounded-[74px] bg-[#FFFFFF] shadow-[-0.5px_-0.5px_0px_0px_#0000000D,10px_10px_21.21px_-3.75px_#0000000E,5.9px_5.9px_8.35px_-3px_#00000031,2.66px_2.66px_3.76px_-2.25px_#0000003B,1.21px_1.21px_1.71px_-1.5px_#0000003F,0.44px_0.44px_0.63px_-1px_#00000042,inset_-1px_-1px_1px_0px_#00000026,inset_1px_1px_1px_0px_#FFFFFF]'>
-              {/* background layer */}
-              <MaskedBackground className="absolute object-cover object-center -left-2 z-0 " />
-
-              {/* foreground content */}
-              <div className="relative z-10">
-                <Image className="" src={frame122905} alt="loading ..." />
-
-                <div className='pt-12'>
-                  <div className="border-[#E4F2FF] border-5 rounded-[72px]">
-                    <button
-                      className="relative w-[177.853759765625px] h-12 rounded-[72px] flex items-center justify-center text-white text-[16px] leading-[160%] overflow-hidden bg-[linear-gradient(180deg,#0F74EF_0%,#1994E7_100%)] cursor-pointer
-                    shadow-[0px_3.71px_4.85px_0px_#57B1FF27,0px_10.27px_13.4px_0px_#57B1FF38,0px_24.72px_32.26px_0px_#57B1FF30,0px_42px_107px_0px_#57B1FF57,inset_0px_1px_4px_2px_#9ACDF9,inset_0px_1px_18px_2px_#9AD0FF]">
-                      {/* Image layer (opacity 40%) */}
-                      <span
-                        className="absolute inset-0 opacity-40 bg-cover bg-center"
-                        style={{
-                          backgroundImage: `url(${button_bg_img.src})`,
-                        }} />
-
-                      {/* Text layer */}
-                      <span className="relative z-10">
-                        AI teammate
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className=''>
+        <div className='flex items-center justify-center pt-10'>
+          <div className='flex flex-col gap-22'>
             <div className="flex items-center">
               <div className="relative -top-7">
                 <div className='flex items-center w-55 h-14 gap-1.5 pt-4 pr-2 pb-4 pl-4 rounded-[60px] bg-white shadow-[-0.5px_-0.5px_0px_0px_#0000000D,10px_10px_21.21px_-3.75px_#0000000E,1.21px_1.21px_1.71px_-1.5px_#0000003F,0.44px_0.44px_0.63px_-1px_#00000042,inset_-1px_-1px_1px_0px_#00000026,inset_1px_1px_1px_0px_#FFFFFF]'>
@@ -102,7 +73,7 @@ const HeroPage = () => {
               </div>
             </div>
 
-            <div className='flex items-center'>
+            <div className='flex items-center ml-12'>
               <div className="relative">
                 <div className='w-55 h-14 flex items-center gap-1.5 rounded-[60px] pt-4 pr-2 pb-4 pl-4 bg-white shadow-[-0.5px_-0.5px_0px_0px_#0000000D,10px_10px_21.21px_-3.75px_#0000000E,1.21px_1.21px_1.71px_-1.5px_#0000003F,0.44px_0.44px_0.63px_-1px_#00000042,inset_-1px_-1px_1px_0px_#00000026,inset_1px_1px_1px_0px_#FFFFFF]'>
                   <span className=''>
@@ -132,6 +103,96 @@ const HeroPage = () => {
               <svg width="170" height="61" viewBox="0 0 170 61" fill="none" xmlns="http://www.w3.org/2000/svg" className="block" >
                 <path d="M0 59.5H62.5C74.6503 59.5 84.5 49.6503 84.5 37.5V23C84.5 10.8497 94.3497 1 106.5 1H170" stroke="#DEE1E4" strokeWidth="2" fill="none" />
               </svg>
+            </div>
+          </div>
+
+          <div className='relative'>
+            <div className='flex items-center w-[320px] h-107.5 rounded-[74px] bg-[#E4F2FF]'>
+              <div className='flex items-center justify-center absolute left-1/2 -translate-x-1/2 w-75 h-102.5 rounded-[74px] bg-[#FFFFFF] shadow-[-0.5px_-0.5px_0px_0px_#0000000D,10px_10px_21.21px_-3.75px_#0000000E,5.9px_5.9px_8.35px_-3px_#00000031,2.66px_2.66px_3.76px_-2.25px_#0000003B,1.21px_1.21px_1.71px_-1.5px_#0000003F,0.44px_0.44px_0.63px_-1px_#00000042,inset_-1px_-1px_1px_0px_#00000026,inset_1px_1px_1px_0px_#FFFFFF]'>
+                {/* background layer */}
+                <MaskedBackground className="absolute object-cover object-center -left-2 z-0 " />
+
+                {/* foreground content */}
+                <div className="relative z-10">
+                  <Image className="" src={frame122905} alt="loading ..." />
+
+                  <div className='pt-12'>
+                    <div className="border-[#E4F2FF] border-5 rounded-[72px]">
+                      <button
+                        className="relative w-[177.853759765625px] h-12 rounded-[72px] flex items-center justify-center text-white text-[16px] leading-[160%] overflow-hidden bg-[linear-gradient(180deg,#0F74EF_0%,#1994E7_100%)] cursor-pointer
+                        shadow-[0px_3.71px_4.85px_0px_#57B1FF27,0px_10.27px_13.4px_0px_#57B1FF38,0px_24.72px_32.26px_0px_#57B1FF30,0px_42px_107px_0px_#57B1FF57,inset_0px_1px_4px_2px_#9ACDF9,inset_0px_1px_18px_2px_#9AD0FF]">
+                        {/* Image layer (opacity 40%) */}
+                        <span
+                          className="absolute inset-0 opacity-40 bg-cover bg-center"
+                          style={{
+                            backgroundImage: `url(${button_bg_img.src})`,
+                          }} />
+
+                        {/* Text layer */}
+                        <span className="relative z-10">
+                          AI teammate
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='flex flex-col gap-22'>
+            <div className='flex items-center'>
+              <div>
+                <svg width="170" height="61" viewBox="0 0 170 61" fill="none" xmlns="http://www.w3.org/2000/svg" className="block" >
+                  <path d="M0 59.5H62.5C74.6503 59.5 84.5 49.6503 84.5 37.5V23C84.5 10.8497 94.3497 1 106.5 1H170" stroke="#DEE1E4" strokeWidth="2" fill="none" />
+                </svg>
+              </div>
+              <div className="relative -top-7">
+                <div className='w-55 h-14 flex items-center gap-1.5 rounded-[60px] pt-4 pr-2 pb-4 pl-4 bg-white shadow-[-0.5px_-0.5px_0px_0px_#0000000D,10px_10px_21.21px_-3.75px_#0000000E,1.21px_1.21px_1.71px_-1.5px_#0000003F,0.44px_0.44px_0.63px_-1px_#00000042,inset_-1px_-1px_1px_0px_#00000026,inset_1px_1px_1px_0px_#FFFFFF]'>
+                  <span className=''>
+                    <Image className="inline-block" src={fi_15862284} alt="loading ..." />
+                  </span>
+                  <button className="text-[#050E14] font-normal text-[20px] leading-[115%] tracking-[-1%]">
+                    Omni-channel
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className='flex items-center'>
+              <div>
+                <svg width="120" height="1" viewBox="0 0 120 1" fill="none" xmlns="http://www.w3.org/2000/svg" className="block" >
+                  <line x1="0" y1="0.5" x2="120" y2="0.5" stroke="#CCCCCC" strokeDasharray="4 4" />
+                </svg>
+              </div>
+              <div className="relative">
+                <div className='w-58.25 h-14 flex items-center gap-1.5 rounded-[60px] pt-4 pr-2 pb-4 pl-4 bg-white shadow-[-0.5px_-0.5px_0px_0px_#0000000D,10px_10px_21.21px_-3.75px_#0000000E,1.21px_1.21px_1.71px_-1.5px_#0000003F,0.44px_0.44px_0.63px_-1px_#00000042,inset_-1px_-1px_1px_0px_#00000026,inset_1px_1px_1px_0px_#FFFFFF]'>
+                  <span className=''>
+                    <Image className="inline-block" src={fi_11168291} alt="loading ..." />
+                  </span>
+                  <button className="text-[#050E14] font-normal text-[20px] leading-[115%] tracking-[-1%]">
+                    Policies & Approval
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center">
+              <div>
+                <svg width="170" height="61" viewBox="0 0 170 61" fill="none" xmlns="http://www.w3.org/2000/svg" className="block" >
+                  <path d="M170 59.5H107.5C95.3497 59.5 85.5 49.6503 85.5 37.5V23C85.5 10.8497 75.6503 1 63.5 1H0" stroke="#DEE1E4" strokeWidth="2" />
+                </svg>
+              </div>
+              <div className="relative -bottom-7">
+                <div className='w-55 h-14 flex items-center gap-1.5 rounded-[60px] pt-4 pr-2 pb-4 pl-4 bg-white shadow-[-0.5px_-0.5px_0px_0px_#0000000D,10px_10px_21.21px_-3.75px_#0000000E,1.21px_1.21px_1.71px_-1.5px_#0000003F,0.44px_0.44px_0.63px_-1px_#00000042,inset_-1px_-1px_1px_0px_#00000026,inset_1px_1px_1px_0px_#FFFFFF]'>
+                  <span className=''>
+                    <Image className="inline-block" src={fi_1161439} alt="loading ..." />
+                  </span>
+                  <button className="text-[#050E14] font-normal text-[20px] leading-[115%] tracking-[-1%]">
+                    Audit Trail
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
