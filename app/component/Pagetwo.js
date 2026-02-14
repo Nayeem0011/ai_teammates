@@ -8,6 +8,7 @@ import Image from 'next/image';
 import fi_4269808 from './image/fi_4269808.png';
 import button_bg_img from './image/button_bg_img.png';
 import fi_17274286 from './image/fi_17274286.png';
+import fi_14752390 from './image/fi_14752390.png';
 
 const Pagetwo = () => {
   return (
@@ -73,9 +74,40 @@ const Pagetwo = () => {
           </div>
         </div>
 
-        <div></div>
+        <div className='flex items-center justify-center mt-6'>
+          <div className='w-55 h-14 flex items-center gap-1.5 rounded-[60px] pt-4 pr-2 pb-4 pl-4 bg-white shadow-[-0.5px_-0.5px_0px_0px_#0000000D,10px_10px_21.21px_-3.75px_#0000000E,1.21px_1.21px_1.71px_-1.5px_#0000003F,0.44px_0.44px_0.63px_-1px_#00000042,inset_-1px_-1px_1px_0px_#00000026,inset_1px_1px_1px_0px_#FFFFFF]'>
+            <span className=''>
+              <Image className="inline-block" src={fi_14752390} alt="loading ..." />
+            </span>
+            <button className="text-[#050E14] font-normal text-[20px] leading-[115%] tracking-[-1%]">
+              Company Brain
+            </button>
+          </div>
+        </div>
 
-        <div></div>
+        <div className='flex items-center justify-center mt-1 gap-8'>
+          <div className='relative overflow-hidden w-125.75 h-110 rounded-[19.83px] bg-white shadow-[0px_10.48px_10.48px_0px_#00000017]'>
+            <div className='flex items-center justify-center'>
+              <div className='relative z-10 bg-[#F8FCFF] w-113.75 h-[216.00003051757812px] flex flex-col gap-5 p-4 rounded-[20px] border border-transparent -mt-5.5'>
+                <p className='font-normal text-[15px] leading-[160%] tracking-[0%] bg-[linear-gradient(180deg,#F8FCFF_15.63%,#4B4C4D_82.85%)] bg-clip-text text-transparent'>
+                  I received the wrong item in my order
+                  and need help with a return. Can you
+                  assist?
+                </p>
+                <p className='w-105.75 h-0 border border-[#E0E0E0]'></p>
+                <p className='text-[#4B4C4D] font-normal text-[15px] leading-[160%] tracking-[0%]'>
+                  I've located your order #4829 and initiated a return label which is being sent to your email now. A replacement has been shipped via priority delivery, and I've added a 15% discount to your account for the inconvenience.
+                </p>
+              </div>
+
+              <div></div>
+
+              <div></div>
+            </div>
+          </div>
+
+          <div className='w-166.75 h-110 rounded-[19.83px] bg-white shadow-[0px_10.48px_10.48px_0px_#00000017]'></div>
+        </div>
       </div>
     </section>
   );
