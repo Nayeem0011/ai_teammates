@@ -14,10 +14,18 @@ import logo_02 from './image/logo_02.png';
 import logo_03 from './image/logo_03.png';
 import logo_04 from './image/logo_04.png';
 import logo_05 from './image/logo_05.png';
+import logo_06 from './image/logo_06.png';
+import logo_07 from './image/logo_07.png';
+import logo_08 from './image/logo_08.png';
+import logo_09 from './image/logo_09.png';
+import logo_10 from './image/logo_10.png';
+import maskgroup from './image/Mask group.png';
+import frame122905 from './image/frame122905.png';
 import { RiSendPlane2Fill } from 'react-icons/ri';
 
 const Pagetwo = () => {
   const logos = [logo_01, logo_02, logo_03, logo_04, logo_05];
+  const logos2 = [logo_06, logo_07, logo_08, logo_09, logo_10];
 
   return (
     <section className='w-full h-screen'>
@@ -152,17 +160,19 @@ const Pagetwo = () => {
 
           <div>
             <div className='w-166.75 h-110 rounded-[19.83px] bg-white shadow-[0px_10.48px_10.48px_0px_#00000017]'>
-              <div className='flex items-center justify-center'>
+              <div className='flex items-center justify-center mt-3'>
                 <div className="flex flex-col items-center justify-center gap-5">
                   {logos.map((logo, index) => (
-                    <div className='w-8.5 h-8.5 flex items-center justify-center gap-2.5 p-1.75 rounded-[19.83px] bg-white border border-[#EFEFEF] shadow-[0px_10.48px_10.48px_0px_#00000017]'>
+                    <p
+                      key={index}
+                      className="w-8.5 h-8.5 flex items-center justify-center gap-2.5 p-1.75 rounded-[19.83px] bg-white border border-[#EFEFEF] shadow-[0px_10.48px_10.48px_0px_#00000017]"
+                    >
                       <Image
-                        key={index}
                         src={logo}
                         alt={`logo-${index + 1}`}
                         className="h-5 w-5"
                       />
-                    </div>
+                    </p>
                   ))}
                 </div>
 
@@ -185,11 +195,105 @@ const Pagetwo = () => {
                       </svg>
                     </div>
 
-                    <div className='pt-22'>
+                    <div className='pt-28'>
                       <div className="w-15 h-px bg-[#E6E6E6]" />
                     </div>
                   </div>
                 </div>
+
+                <div className=''>
+                  <div className='pl-16'>
+                    <svg width="58" height="74" viewBox="0 0 58 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M51.8333 2.66663C51.8333 4.13939 53.0272 5.33329 54.5 5.33329C55.9728 5.33329 57.1667 4.13939 57.1667 2.66663C57.1667 1.19387 55.9728 -4.07696e-05 54.5 -4.07696e-05C53.0272 -4.07696e-05 51.8333 1.19387 51.8333 2.66663ZM0.5 73.6666H1V59.3565H0.5H0V73.6666H0.5ZM14.5 45.3565V45.8565H40.5V45.3565V44.8565H14.5V45.3565ZM54.5 31.3565H55V2.66663H54.5H54V31.3565H54.5ZM40.5 45.3565V45.8565C48.5081 45.8565 55 39.3646 55 31.3565H54.5H54C54 38.8123 47.9558 44.8565 40.5 44.8565V45.3565ZM0.5 59.3565H1C1 51.9007 7.04416 45.8565 14.5 45.8565V45.3565V44.8565C6.49187 44.8565 0 51.3484 0 59.3565H0.5Z" fill="#E6E6E6" />
+                    </svg>
+                  </div>
+
+                  <div className="relative -pt-10 -ml-8 w-fit">
+                    <div className='absolute'>
+                      <div className="relative w-5 h-7 mt-2 ml-2">
+                        {/* Bottom horizontal line */}
+                        <div className="absolute bottom-0 left-0 w-1.25 h-px bg-[#E6E6E6]" />
+                        {/* Curved corner + vertical line */}
+                        <div className="absolute right-0 bottom-0 w-4.75 h-6.75 border-r border-b border-[#E6E6E6] rounded-br-[14px]" />
+                      </div>
+                    </div>
+
+                    <div>
+                      {/* Background image */}
+                      <Image
+                        src={maskgroup}
+                        alt="loading..."
+                        className="block"
+                      />
+
+                      {/* Center overlay image */}
+                      <Image
+                        src={frame122905}
+                        alt="loading..."
+                        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[69.40px] h-[89.81px]"
+                      />
+                    </div>
+
+                    <div className='absolute ml-27 -mt-6 '>
+                      <svg width="39" height="15" viewBox="0 0 39 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 15V14.5C0.5 6.76801 6.76801 0.5 14.5 0.5H38.5" stroke="#E6E6E6" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div className="relative w-1.5 h-16">
+                    {/* Vertical Line */}
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-15.25 bg-[#E6E6E6]" />
+                    {/* Bottom Dot */}
+                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#E6E6E6]" />
+                  </div>
+                </div>
+
+                <div className='flex'>
+                  <div className='flex'>
+                    <div className='-mr-1 mt-56 -ml-8'>
+                      <svg width="92" height="30" viewBox="0 0 92 30" fill="none" xmlns="http://www.w3.org/2000/svg" className="block" >
+                        <path d="M0.5 0V15C0.5 22.732 6.768 29 14.5 29H91.5" stroke="#E6E6E6" fill="none" />
+                      </svg>
+                    </div>
+
+                    <div className='pr-5'>
+                      <div className="relative w-1.5 h-69.5 flex justify-center">
+                        {/* Vertical Line */}
+                        <div className="w-px h-full bg-[#E6E6E6]" />
+                        {/* Top Dot */}
+                        <div className="absolute top-0 w-1.5 h-1.5 bg-[#E6E6E6] rounded-full" />
+                        {/* Bottom Dot */}
+                        <div className="absolute bottom-0 w-1.5 h-1.5 bg-[#E6E6E6] rounded-full" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col items-center justify-center gap-5">
+                    {logos2.map((logos2, index) => (
+                      <p
+                        key={index}
+                        className="w-8.5 h-8.5 flex items-center justify-center gap-2.5 p-1.75 rounded-[19.83px] bg-white border border-[#EFEFEF] shadow-[0px_10.48px_10.48px_0px_#00000017]"
+                      >
+                        <Image
+                          src={logos2}
+                          alt={`logos2-${index + 1}`}
+                          className="h-5 w-5"
+                        />
+                      </p>
+                    ))}
+                  </div>
+                </div>
+
+              </div>
+
+              <div className='ml-6 mt-4'>
+                <h1 className='text-[#050E14] font-medium text-[24px] leading-[115%] tracking-[-1%]'>
+                  Seamless Integrations
+                </h1>
+                <p className='text-[#4B4F57] font-normal text-[16px] leading-[160%] tracking-[0%] pt-3'>
+                  Deliver natural, context-aware responses across every channel, ensuring a <br /> personal touch in every conversation.
+                </p>
               </div>
             </div>
           </div>
