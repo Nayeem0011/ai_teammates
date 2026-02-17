@@ -9,8 +9,16 @@ import fi_4269808 from './image/fi_4269808.png';
 import button_bg_img from './image/button_bg_img.png';
 import fi_17274286 from './image/fi_17274286.png';
 import fi_14752390 from './image/fi_14752390.png';
+import logo_01 from './image/logo_01.png';
+import logo_02 from './image/logo_02.png';
+import logo_03 from './image/logo_03.png';
+import logo_04 from './image/logo_04.png';
+import logo_05 from './image/logo_05.png';
+import { RiSendPlane2Fill } from 'react-icons/ri';
 
 const Pagetwo = () => {
+  const logos = [logo_01, logo_02, logo_03, logo_04, logo_05];
+
   return (
     <section className='w-full h-screen'>
       <div>
@@ -87,7 +95,7 @@ const Pagetwo = () => {
 
         <div className='flex items-center justify-center mt-1 gap-8'>
           <div className='relative overflow-hidden w-125.75 h-110 rounded-[19.83px] bg-white shadow-[0px_10.48px_10.48px_0px_#00000017]'>
-            <div className='flex items-center justify-center'>
+            <div className='flex flex-col items-center justify-center gap-6'>
               <div className='relative z-10 bg-[#F8FCFF] w-113.75 h-[216.00003051757812px] flex flex-col gap-5 p-4 rounded-[20px] border border-transparent -mt-5.5'>
                 <p className='font-normal text-[15px] leading-[160%] tracking-[0%] bg-[linear-gradient(180deg,#F8FCFF_15.63%,#4B4C4D_82.85%)] bg-clip-text text-transparent'>
                   I received the wrong item in my order
@@ -100,13 +108,91 @@ const Pagetwo = () => {
                 </p>
               </div>
 
-              <div></div>
+              <div className='relative w-113.75 h-15.5'>
+                {/* Glow background */}
+                <div className="absolute inset-0  rounded-[31px] bg-white overflow-hidden border border-[#EDEDED]">
+                  {/* Blue glow bottom-left */}
+                  <div className="absolute left-1.25 top-8 w-37.5 h-8.5 bg-[#0088FF] opacity-50 blur-[12.4px] rounded-full" />
+                  {/* Pink glow top-right */}
+                  <div className="absolute right-13.75 -top-2.5 w-76.25 h-7.25 bg-[#FF82CA] opacity-10 blur-[12.4px] rounded-full" />
+                  {/* Small pink glow top-left */}
+                  <div className="absolute left-18.5 -top-6 w-22.5 h-7.25 bg-[#FF82CA] opacity-50 blur-[12.4px] rounded-full" />
+                  {/* Gradient glow bottom-right */}
+                  <div
+                    className="absolute -right-12.5 -bottom-2.5 w-76.25 h-7.25 opacity-20 blur-[12.4px] rounded-full"
+                    style={{
+                      background: "linear-gradient(90deg, #0088FF 0%, #994E79 100%)",
+                    }}
+                  />
+                  {/* Extra blue glow left outside */}
+                  <div className="absolute -left-15.75 -top-17 w-24 h-24 bg-[#0088FF] blur-[12.4px] rounded-full" />
+                  {/* Extra pink glow right outside */}
+                  <div className="absolute -right-15.75 -top-14 w-24 h-24 bg-[#F386B8] blur-[12.4px] rounded-full" />
+                </div>
 
-              <div></div>
+                {/* TOP SMALL CARD */}
+                <div className="">
+                  <input className='w-108.75 h-10.5 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center pr-10 pl-4 rounded-[46px] bg-white border border-[#EDEDED] shadow-[0px_0px_17.9px_0px_#00000026] text-[#CECECE] font-normal text-[16px] leading-[160%] tracking-[0%] outline-none'
+                    placeholder='Ask me anything......' />
+                  {/* Right action (example icon / button) */}
+                  <RiSendPlane2Fill className="absolute right-4 top-1/2 -translate-y-1/2 text-[#0088FF] w-5 h-5 cursor-pointer" />
+                </div>
+              </div>
+
+              <div className='ml-6'>
+                <h1 className='text-[#050E14] font-medium text-[24px] leading-[115%] tracking-[-1%]'>
+                  Surprisingly Human
+                </h1>
+                <p className='text-[#4B4F57] font-normal text-[16px] leading-[160%] tracking-[0%] pt-3'>
+                  Deliver natural, context-aware responses across every channel, ensuring a personal touch in every conversation.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className='w-166.75 h-110 rounded-[19.83px] bg-white shadow-[0px_10.48px_10.48px_0px_#00000017]'></div>
+          <div>
+            <div className='w-166.75 h-110 rounded-[19.83px] bg-white shadow-[0px_10.48px_10.48px_0px_#00000017]'>
+              <div className='flex items-center justify-center'>
+                <div className="flex flex-col items-center justify-center gap-5">
+                  {logos.map((logo, index) => (
+                    <div className='w-8.5 h-8.5 flex items-center justify-center gap-2.5 p-1.75 rounded-[19.83px] bg-white border border-[#EFEFEF] shadow-[0px_10.48px_10.48px_0px_#00000017]'>
+                      <Image
+                        key={index}
+                        src={logo}
+                        alt={`logo-${index + 1}`}
+                        className="h-5 w-5"
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                <div className='flex pl-5'>
+                  <div className=''>
+                    <div className="relative w-1.5 h-69.5 flex justify-center">
+                      {/* Vertical Line */}
+                      <div className="w-px h-full bg-[#E6E6E6]" />
+                      {/* Top Dot */}
+                      <div className="absolute top-0 w-1.5 h-1.5 bg-[#E6E6E6] rounded-full" />
+                      {/* Bottom Dot */}
+                      <div className="absolute bottom-0 w-1.5 h-1.5 bg-[#E6E6E6] rounded-full" />
+                    </div>
+                  </div>
+
+                  <div className='-ml-1'>
+                    <div className='pt-10'>
+                      <svg width="91" height="29" viewBox="0 0 91 29" fill="none" xmlns="http://www.w3.org/2000/svg" className="block" >
+                        <path d="M90.5 28.5V14.5C90.5 6.768 84.232 0.5 76.5 0.5H0" stroke="#E6E6E6" fill="none" />
+                      </svg>
+                    </div>
+
+                    <div className='pt-22'>
+                      <div className="w-15 h-px bg-[#E6E6E6]" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
