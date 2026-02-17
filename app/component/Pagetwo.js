@@ -49,6 +49,7 @@ const Pagetwo = () => {
           </div>
 
           <div className='flex justify-center'>
+            {/* Main Heading */}
             <h1 className='font-medium text-[60px] leading-[115%] tracking-[-1%] text-center text-[#050E14]'>
               <span>Transform </span>
               <span className='relative inline-flex items-center justify-center w-[44.88309685607078px] h-[44.88309685607078px] opacity-100 rounded-[10.68px] bg-[linear-gradient(180deg,#0073FF_0%,#0DA2FF_100%)] border-transparent
@@ -90,6 +91,7 @@ const Pagetwo = () => {
           </div>
         </div>
 
+        {/* Company Brain Button */}
         <div className='flex items-center justify-center mt-6'>
           <div className='w-55 h-14 flex items-center gap-1.5 rounded-[60px] pt-4 pr-2 pb-4 pl-4 bg-white shadow-[-0.5px_-0.5px_0px_0px_#0000000D,10px_10px_21.21px_-3.75px_#0000000E,1.21px_1.21px_1.71px_-1.5px_#0000003F,0.44px_0.44px_0.63px_-1px_#00000042,inset_-1px_-1px_1px_0px_#00000026,inset_1px_1px_1px_0px_#FFFFFF]'>
             <span className=''>
@@ -101,9 +103,12 @@ const Pagetwo = () => {
           </div>
         </div>
 
+        {/* Main Cards */}
         <div className='flex items-center justify-center mt-1 gap-8'>
+          {/* Left Card */}
           <div className='relative overflow-hidden w-125.75 h-110 rounded-[19.83px] bg-white shadow-[0px_10.48px_10.48px_0px_#00000017]'>
             <div className='flex flex-col items-center justify-center gap-6'>
+              {/* Chat Card */}
               <div className='relative z-10 bg-[#F8FCFF] w-113.75 h-[216.00003051757812px] flex flex-col gap-5 p-4 rounded-[20px] border border-transparent -mt-5.5'>
                 <p className='font-normal text-[15px] leading-[160%] tracking-[0%] bg-[linear-gradient(180deg,#F8FCFF_15.63%,#4B4C4D_82.85%)] bg-clip-text text-transparent'>
                   I received the wrong item in my order
@@ -116,6 +121,7 @@ const Pagetwo = () => {
                 </p>
               </div>
 
+              {/* Ask Input */}
               <div className='relative w-113.75 h-15.5'>
                 {/* Glow background */}
                 <div className="absolute inset-0  rounded-[31px] bg-white overflow-hidden border border-[#EDEDED]">
@@ -147,6 +153,7 @@ const Pagetwo = () => {
                 </div>
               </div>
 
+              {/* Info Section */}
               <div className='ml-6'>
                 <h1 className='text-[#050E14] font-medium text-[24px] leading-[115%] tracking-[-1%]'>
                   Surprisingly Human
@@ -158,9 +165,11 @@ const Pagetwo = () => {
             </div>
           </div>
 
+          {/* Right Card */}
           <div>
             <div className='w-166.75 h-110 rounded-[19.83px] bg-white shadow-[0px_10.48px_10.48px_0px_#00000017]'>
               <div className='flex items-center justify-center mt-3'>
+                {/* Left Logos */}
                 <div className="flex flex-col items-center justify-center gap-5">
                   {logos.map((logo, index) => (
                     <p
@@ -176,6 +185,7 @@ const Pagetwo = () => {
                   ))}
                 </div>
 
+                {/* Middle Connector */}
                 <div className='flex pl-5'>
                   <div className=''>
                     <div className="relative w-1.5 h-69.5 flex justify-center">
@@ -269,6 +279,7 @@ const Pagetwo = () => {
                     </div>
                   </div>
 
+                  {/* Right Logos */}
                   <div className="flex flex-col items-center justify-center gap-5">
                     {logos2.map((logos2, index) => (
                       <p
@@ -287,6 +298,7 @@ const Pagetwo = () => {
 
               </div>
 
+              {/* Info Section */}
               <div className='ml-6 mt-4'>
                 <h1 className='text-[#050E14] font-medium text-[24px] leading-[115%] tracking-[-1%]'>
                   Seamless Integrations
