@@ -2,6 +2,7 @@
 
 import GradientLine from "../svg/GradientLine";
 import GradientLineRight from "../svg/GradientLineRight";
+import GridBackground from "../svg/GridBackground";
 import SparkIcon from "../svg/SparkIcon";
 
 // import Image from 'next/image';
@@ -10,7 +11,9 @@ import SparkIcon from "../svg/SparkIcon";
 const Pagefore = () => {
 
   return (
-    <section className="w-full h-screen">
+    <section className="relative  w-full h-screen">
+      <GridBackground />
+
       <div className="flex flex-col items-center justify-center gap-6 pt-20">
         <div className='flex justify-center'>
           {/* Left gradient line */}
