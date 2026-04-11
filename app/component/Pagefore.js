@@ -5,16 +5,16 @@ import GradientLineRight from "../svg/GradientLineRight";
 import GridBackground from "../svg/GridBackground";
 import SparkIcon from "../svg/SparkIcon";
 
-// import Image from 'next/image';
-// import image49 from './image/image49.svg';
+import Image from 'next/image';
+import Group from './image/Group 11.png';
 
 const Pagefore = () => {
 
   return (
-    <section className="relative  w-full h-screen">
+    <section className="relative w-full h-screen">
       <GridBackground />
 
-      <div className="flex flex-col items-center justify-center gap-6 pt-20">
+      <div className="flex flex-col items-center justify-center gap-6">
         <div className='flex justify-center'>
           {/* Left gradient line */}
           <GradientLine className="w-24 h-1.5 mt-5" />
@@ -38,7 +38,13 @@ const Pagefore = () => {
         </div>
       </div>
 
-      <div></div>
+      <div className="flex items-center justify-center gap-10 mt-10">
+        <div>Mayeem</div>
+        
+        <div className="relative">
+          <Image src={Group} alt="Group 11" className="h-118 w-118" />
+        </div>
+      </div>
     </section>
   );
 };
