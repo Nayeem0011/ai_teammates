@@ -4,6 +4,7 @@ import GradientLine from "../svg/GradientLine";
 import GradientLineRight from "../svg/GradientLineRight";
 import GridBackground from "../svg/GridBackground";
 import SparkIcon from "../svg/SparkIcon";
+import button_bg_img from './image/button_bg_img.png';
 
 import Image from 'next/image';
 import Group from './image/Group 11.png';
@@ -39,8 +40,27 @@ const Pagefore = () => {
       </div>
 
       <div className="flex items-center justify-center gap-10 mt-10">
-        <div>Mayeem</div>
-        
+        <div>
+          <div></div>
+          <div className="border-[#E4F2FF] border-7 rounded-[72px] ">
+            <button
+              className="relative w-[225.84375px] h-[65.69999694824219px] rounded-[72px] flex items-center justify-center text-white text-[16px] leading-[160%] overflow-hidden bg-[linear-gradient(180deg,#0F74EF_0%,#1994E7_100%)] cursor-pointer
+                shadow-[0px_3.71px_4.85px_0px_#57B1FF27,0px_10.27px_13.4px_0px_#57B1FF38,0px_24.72px_32.26px_0px_#57B1FF30,0px_42px_107px_0px_#57B1FF57,inset_0px_1px_4px_2px_#9ACDF9,inset_0px_1px_18px_2px_#9AD0FF]">
+              {/* Image layer (opacity 40%) */}
+              <span
+                className="absolute inset-0 opacity-40 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${button_bg_img.src})`,
+                }} />
+
+              {/* Text layer */}
+              <span className="relative z-10 text-[#FFFFFF] font-normal text-[21.9px] leading-[160%] tracking-[0em] text-center">
+                Configure
+              </span>
+            </button>
+          </div>
+        </div>
+
         <div className="relative">
           <Image src={Group} alt="Group 11" className="h-118 w-118" />
         </div>
