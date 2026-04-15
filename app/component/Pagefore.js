@@ -39,9 +39,30 @@ const Pagefore = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-10 mt-10">
-        <div>
-          <div></div>
+      <div className="flex items-center justify-center gap-30 mt-10">
+        <div className="flex items-center justify-center ">
+          <div className="">
+            <div className="pl-18">
+              <svg width="144" height="121" viewBox="0 0 144 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.67334 0.122314C7.06084 35.2536 44.4733 110.58 143.023 119.888" stroke="#DEE2E8" stroke-width="1.36875" />
+              </svg>
+            </div>
+            <div>
+              <svg width="219" height="28" viewBox="0 0 219 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.581543 0.36084C12.9003 20.2077 153.197 21.9868 218.897 26.3668" stroke="#DEE2E8" stroke-width="1.36875" />
+              </svg>
+            </div>
+            <div className="pl-1">
+              <svg width="214" height="30" viewBox="0 0 214 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.233398 29.3296C31.0303 18.1515 147.374 -3.11002 213.074 1.26998" stroke="#DEE2E8" stroke-width="1.36875" />
+              </svg>
+            </div>
+            <div className="pl-19">
+              <svg width="134" height="113" viewBox="0 0 134 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.656738 112.225C8.41299 85.7623 32.138 20.5185 133.425 0.671631" stroke="#DEE2E8" stroke-width="1.36875" />
+              </svg>
+            </div>
+          </div>
           <div className="border-[#E4F2FF] border-7 rounded-[72px] ">
             <button
               className="relative w-[225.84375px] h-[65.69999694824219px] rounded-[72px] flex items-center justify-center text-white text-[16px] leading-[160%] overflow-hidden bg-[linear-gradient(180deg,#0F74EF_0%,#1994E7_100%)] cursor-pointer
@@ -70,3 +91,5 @@ const Pagefore = () => {
 };
 
 export default Pagefore;
+
+
